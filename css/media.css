@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+/* レスポンシブコード
+画面サイズ768px以下で表示を変えています
+*/
+@media (max-width:768px) {
+
+  /* ファーストビュー画面 */
+
+  /* ヘッダーメニュー  YOSHIAKI'S*/
+  .navigation-container h1 {
+    margin: 0 auto;
+  }
+
+  /* メインタイトル -YOSHIAKI'S- */
+  .main-character {
+    padding: 0 2.8rem;
+    /* min-width: 500px; */
+  }
+
+  /* メインタイトル -YOSHIAKI'S- */
+  .main-character h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* キャッチコピー こんにちは~ */
+  .main-message {
+    padding: 0 0.28rem;
+  }
+
+  .skills-box img {
+    /* width: 70px; */
+    width: 80px;
+  }
+
+  .work-item img {
+    height: 150px;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .main-border {
+    width: 6rem;
+    margin: 1.5rem auto;
+    border: 0.08rem solid rgb(123, 243, 193);
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .more-button {
+    top: 85%;
+    font-size: 5px;
+    padding: 14px 25px;
+  }
+
+  /* .send-btn {
+    font-size: 5px;
+    padding: 14px 25px;
+  } */
+
+  .about-chara {
+    padding: 0 30px;
+  }
+
+  .work-item {
+    margin-bottom: 30px;
+  }
+  .form-item.send-btn input {
+    font-size: 5px;
+    padding: 8px 2px;
+    width: 120px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .container h3 {
+    font-size: 3rem;
+  }
+  
+  .main-message p{
+    font-size: 10px;
+  }
+  /* .skills-container h5 {
+    font-size: 3rem;
+    padding-left: 0.5rem;
+  } */
+
+  .works-container {
+    padding: 15px 0 0 0;
+  }
+
+  
+
+
+  /* =================
+ハンバーガーボタンの実装
+================= */
+
+  .menu-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: black;
+  }
+
+  .menu-btn:hover {
+    cursor: pointer;
+    background-color: #bacdce;
+    /* background-color: #6dfd9d; */
+  }
+
+  /* 三本線の実装 */
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+  }
+
+
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+
+  .menu-btn span:after {
+    top: 8px;
+  }
+
+  /* チェックボックスを非表示にする */
+  #menu-btn-check {
+    display: none;
+  }
+
+  /*メニューオープン時は真ん中の線を透明にする*/
+  #menu-btn-check:checked~.menu-btn span {
+    background-color: rgba(191, 52, 52, 0);
+
+  }
+
+  /* メニューを開いている時はハンバーガーボタンが×になる */
+  #menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* =================
+メニュー部分の実装
+================= */
+
+  .menu-content {
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 64px;
+    /* メニューを外に出しておく */
+    left: 140%;
+    z-index: 80;
+    background-color: rgba(186, 205, 206, 0.8);
+    /*アニメーションを滑らかにする*/
+    transition: all 0.4s;
+  }
+
+  /* ヘッダーメニューを横から縦に位置を変更する */
+  .navigation-menus {
+    flex-direction: column;
+  }
+
+  .menu-content ul {
+    padding: 70px 10px 0;
+    padding: 60px 40px 0;
+  }
+
+  .menu-content ul li {
+    border-bottom: solid 0.1rem #6dfd9d;
+    list-style: none;
+    justify-content: flex-start;
+  }
+
+  .menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+
+    position: relative;
+  }
+
+  .menu-content ul li a:hover {
+    background-color: #6dfd9d;
+  }
+
+  #menu-btn-check:checked~.menu-content {
+    left: 30%;
+    /*メニューを画面内へ動かす*/
+  }
+
+  /* フォーム */
+  .contact-form-inner {
+    padding: 30px 15px;
+    border: none;
+  }
+
+  .form-item {
+    width: 95%;
+    margin: 20px auto 0;
+  }
+
+  .form-item>input {
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 5px;
+  }
+
+  .form-item textarea {
+    border-radius: 15px;
+    margin-top: 5px;
+  }
+
+  .form-item input::placeholder {
+    padding-left: 5px;
+  }
+
+  .form-flex input {
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 5px;
+  }
+
+  .form-flex input.your-add-1 {
+    width: 70%;
+  }
+
+  .form-hissu {
+    margin-left: 5px;
+  }
+
+  .form-free {
+    margin-left: 5px;
+  }
+
+  .last-check>input {
+    margin: 0 5px 0 0;
+  }
+
+  .form-item.send-btn {
+    width: 80%;
+    margin: 30px auto 0;
+  }
+}
+
+@media (min-width:1500px) {
+  h2 {
+    /* top: 20%; */
+    font-size: 4rem;
+  }
+
+  .main-message p{
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .more-button {
+    top: 74%;
+  }
+
+  .main-character {
+    top: 35%;
+  }
+
+  .about-chara {
+    font-size: 1.6rem;
+  }
+
+  
+}

@@ -1,0 +1,402 @@
+@charset "utf-8";
+
+
+/* 変数 */
+/* :root{
+  --skills-outside-border:1px solid blue ;
+} */
+
+/* 共通 */
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:link {
+  color: white;
+}
+/* h1 {
+  font-size: 1rem;
+} */
+
+.about-box {
+  margin: 0 auto;
+  /* max-width: 100vw; */
+  /* padding: 4rem 2rem; */
+}
+
+.about-box p {
+  margin-left: 1rem;
+}
+
+.aboutme-container img {
+  width: 200px;
+  height: 200px;
+}
+
+/* メインイメージ */
+.main-img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  opacity: 0.6;
+  object-fit: cover;
+}
+
+.main-img-wrapper {
+  background-color: gray;
+  /* z-index: 1; */
+  /* opacity: 0.3; */
+}
+
+.main-character {
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* line-height: 3.5rem; */
+}
+
+.main-border {
+  width: 6rem;
+  margin: 1.5rem auto;
+  border: 0.14rem solid rgb(123, 243, 193);
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-message {
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 0.2rem;
+  line-height: 1.4rem;
+}
+
+/* メインボタン */
+.more-button {
+  /* color: red; */
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 260px; */
+  padding: 1rem 4rem;
+  font-weight: bold;
+  /* border: 2px solid #27acd9; */
+  background: white;
+  color: #fff;
+  color: #fff;
+  border-radius: 100vh;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+.more-button:hover {
+    color: rgb(0, 0, 0);
+    background: #6dfd9d;
+}
+
+/* ヘッダー */
+
+/* ヘッダーメニュー */
+.navigation-container {
+  width: 100%;
+  display: flex;
+  color: white;
+  height: 4rem;
+  position: fixed;
+  top: 0px;
+  padding: 0px 32px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  background-color: black;
+}
+
+.navigation-menus {
+  display: flex;
+  /* background-color: skyblue; */
+  justify-content: right;
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+.navigation-menus li {
+  margin: 0 16px;
+  text-align: center;
+  padding: 10px 16px;
+}
+
+.navigation-menus li:hover {
+  background-color: white;
+  color: black;
+}
+
+.navigation-menus li a {
+  display: block;
+  height: 3rem;
+  width: 5rem;
+  line-height: 3rem;
+}
+
+
+/* ABOUT */
+/* 自己紹介の文章 */
+.about-chara {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.about-chara div {
+  line-height: 2rem;
+}
+
+.container {
+  text-align: center;
+}
+/*============== SKILLS =============*/
+.skills-box td {
+  text-align: left;
+  /* background-color: red; */
+}
+
+.skills-box th {
+  width: 60%;
+}
+
+.skills-box h5 {
+  padding-right: 20px;
+}
+
+
+.about-box {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skills-box tr {
+  height: 9rem;
+  background-color: white;
+  vertical-align: middle;
+}
+
+.container h3 {
+  font-size: 3rem;
+  /* background: red; */
+  text-align: center;
+  padding: 1rem 0;
+  display: inline-block;
+  border-bottom: 3px solid #6dfd9d;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  background-color: rgb(223, 222, 222);
+}
+
+.skills-container h4 {
+  font-size: 2.3rem;
+  padding: 1rem 0 0.8rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+  /* border-bottom: 0.1rem solid red; */
+}
+
+.skills-container h5 {
+  font-size: 3rem;
+  padding-left: 0.5rem;
+}
+
+.wrapper {
+  /* border: 1px solid red; */
+  /* ↓ここのpadding気を付けて */
+  /* padding: 2rem 2rem 3rem; */
+  border-radius: 1rem;
+  background-color: white;
+  margin-bottom: 40px;
+  /* margin: 3rem 2rem 5rem; */
+}
+
+.xdImg {
+  width: 80px;
+}
+
+.javaScriptImg {
+  width: 80px;
+}
+
+/*-------------- SKILLS front-end -------------*/
+.skills-box h4 {
+  text-align: center;
+}
+
+th, td {
+  vertical-align: middle;
+}
+
+
+
+/* WORKS */
+.work-item {
+  margin: 0 auto;
+  background-color:white;
+  /* border-radius: 1rem; */
+  /* width: 500px;
+  height: 600px; */
+  display: flex;
+  /* align-items: center; */
+  /* width: 100%; */
+  text-align: center;
+  /* background-color: red; */
+  justify-content: center;
+}
+
+.work-item img {
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.work-item img:hover {
+  filter: opacity(70%);
+}
+
+/* CONTACT */
+.contact-form-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* contact-container */
+.contact-container {
+  background-color: #DFDEDE;
+}
+
+/* お問い合わせフォーム */
+.form-item:first-child {
+  margin-top: 0;
+}
+.form-item {
+  width: 70%;
+  margin: 30px auto 0;
+}
+.form-item label{
+  display: block;
+  font-size: 16px;
+  color: #333333;
+}
+.form-item > input{
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+}
+.form-item input::placeholder,
+.form-item textarea::placeholder {
+  padding-left:15px;
+}
+.form-flex {
+  display: flex;
+  flex-direction: column;
+}
+.form-flex input {
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+}
+.form-hissu {
+  color: #ffffff;
+  font-size: 13px;
+  margin-left: 15px;
+  padding: 3px 5px;
+  background-color: red;
+}
+.form-free {
+  color: #ffffff;
+  font-size: 13px;
+  margin-left: 15px;
+  padding: 3px 5px;
+  background-color: #8DC39F;
+}
+.form-item textarea{
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+}
+
+.form-item.send-btn{
+  /* max-width: 200px; */
+  text-align: center;
+  /* background-color: red; */
+}
+.form-item.send-btn input{
+  width: 260px;
+  padding: 1rem 4rem;
+  font-weight: bold;
+  /* border: 2px solid #27acd9; */
+  background: white;
+  color: black;
+  border-radius: 100vh;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+.form-item.send-btn input:hover {
+  background-color: #6dfd9d;
+  color: black;
+  border: 1px solid #8DC39F;
+  transition: all .3s;
+}
+
+.send-btn {
+  margin: 4rem auto;
+}
+
+
+/* footer */
+footer{
+  /* margin-top: 3rem; */
+  /* margin-bottom: 0.8rem; */
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #606060;
+  color: white;
+}

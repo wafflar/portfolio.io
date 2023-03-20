@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body {
+  text-align: center;
+  /* background-color: orange; */
+}
+
+.contact-wrap {
+  margin-top: 5rem;
+}
+
+.thanks {
+  margin-top: 10rem;
+}
+
+button {
+  margin-top: 1rem;
+}

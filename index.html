@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- metaタグ忘れんように -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>YOHISAKI'S Portfolio</title>
+</head>
+
+<body>
+  <!----------- ヘッダー ----------->
+  <header>
+    <nav class="navigation-container">
+      <h1><a href="#">YOSHIAKI&apos;S Portfolio</a></h1>
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="hamburger-menu">
+        <!--   ボタンが押されたかどうかをチェックボックスで判断する -->
+        <input type="checkbox" id="menu-btn-check">
+
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+
+        <div class="menu-content">
+          <ul class="navigation-menus">
+            <li><a href="#about-me">About&nbsp;me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ファーストビュー -->
+    <div class="main-img-wrapper">
+      <img class="main-img" src="images/main.jpg" alt="トップのメイン画像">
+      <!-- <div class="background"></div> -->
+    </div>
+
+    <div class="main-character">
+      <h2>-&nbsp;YOSHIAKI&apos;S&nbsp;-</h2>
+      <h2><span>Web</span>&nbsp;<span>Programmer</span>&nbsp;<span>Portfolio</span></h2>
+    </div>
+
+    <hr class="main-border">
+    </hr>
+
+    <div class="main-message">
+      <p>こんにちは。</p>
+      <p>新しいことが大好きなWebプログラマーです。</p>
+      <p>分からないことを調べて解決する能力が私の長所です。</p>
+    </div>
+    <a href="#about-me" class="more-button">もっと見る&nbsp;&darr;</a>
+  </header>
+
+
+  <!---------- メイン ----------->
+  <main>
+    <!-- ABOUT ME -->
+    <section id="about-me" class="aboutme-container container">
+      <h3>ABOUT ME</h3>
+      <div class="about-box">
+        <img src="images/face.png" alt="顔写真">
+        <div class="about-chara">
+          <div>
+            <p>生まれも育ちも島根県。</p>
+          </div>
+          <div>
+            <!-- <p>趣味は温泉やアニメが散歩好き。</p> -->
+          </div>
+          <div>
+            <p>今はWordPressを利用したレスポンシブサイト制作をメインに活動しています。</p>
+          </div>
+          <div>
+            <p>何か気になることやご相談があればお気軽にお問い合わせください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-container container">
+      <h3>SKILLS</h3>
+      <div class="skills-contents">
+        <div class="wrapper">
+          <div class="front-end-box skills-box">
+            <h4>front end</h4>
+            <table>
+              <tr>
+                <th>
+                  <img class="img" src="images/html_icon.png" alt="html画像">
+                </th>
+                <td>
+                  <h5>HTML</h5>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img class="img" src="images/css_icon.png" alt="css画像">
+                </th>
+                <td>
+                  <h5>CSS</h5>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img class="img javaScriptImg" src="images/javascript_icon.png" alt="javascript画像">
+                </th>
+                <td>
+                  <h5>JavaScript</h5>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="design-box skills-box">
+            <h4>design</h4>
+            <table>
+              <tr>
+                <th>
+                  <img class="img" src="images/photoshop_icon.png" alt="photoshop画像">
+                </th>
+                <td>
+                  <h5>Photoshop</h5>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img class="img" src="images/illustrator_icon.png" alt="illustrator画像">
+                </th>
+                <td>
+                  <h5>Illustrator</h5>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img class="img xdImg" src="images/adobexd_icon.png" alt="xd画像">
+                </th>
+                <td>
+                  <h5>XD</h5>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="back-end-box skills-box">
+            <h4>back end</h4>
+            <table>
+              <tr>
+                <th>
+                  <img class="img" src="images/mysql_icon.png" alt="">
+                </th>
+                <td>
+                  <h5>MySQL</h5>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img class="img" src="images/php_icon.png" alt="">
+                </th>
+                <td>
+                  <h5>PHP</h5>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img class="img" src="images/javascript_icon.png" alt="">
+                </th>
+                <td>
+                  <h5>JavaScript</h5>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="works-container container">
+      <h3>WORKS</h3>
+      <div class="work-item">
+        <a href="#" target="_blank">
+          <img src="images/worksImg.png" alt="制作物">
+        </a>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <!-- お名前 -->
+    <section id="contact" class="contact-container container">
+      <form action="html/mail.php" method="post">
+        <h3>CONTACT</h3>
+        <div class="contact-form-inner">
+          <div class="form-item">
+            <label id="your-name">お名前<span class="form-hissu">必須</span></label>
+            <input type="text" name="名前" placeholder="北山 義章">
+          </div>
+          <!-- メールアドレス -->
+          <div class="form-item">
+            <label id="your-mail">メールアドレス<span class="form-hissu">必須</span></label>
+            <input type="text" name="メール" placeholder="〇〇〇〇@gmail.com">
+          </div>
+          <!-- お問い合わせ -->
+          <div class="form-item">
+            <label id="your-content">お問い合わせ内容<span class="form-hissu">必須</span></label>
+            <textarea name="your-content" id="your-content" cols="30" rows="10"
+              placeholder="ここにお問い合わせ内容が入ります。"></textarea>
+          </div>
+          <div class="form-item send-btn">
+            <a>
+              <input type="submit" value="送信する"></a>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!------------- フッター ----------->
+  <footer>
+    <small>&copy;&nbsp;2023&nbsp;yoshiaki</small>
+  </footer>
+</body>
+
+</html>
