@@ -247,7 +247,16 @@ a:link {
   border-radius: 1rem;
   background-color: white;
   margin-bottom: 40px;
+  padding: 10px;
   /* margin: 3rem 2rem 5rem; */
+}
+
+.php-img, .mySql-img{
+  width: 80px;
+}
+
+.js-img {
+  width: 80px;
 }
 
 .xdImg {
